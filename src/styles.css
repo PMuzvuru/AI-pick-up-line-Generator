@@ -1,3 +1,5 @@
+/* src/styles.css */
+
 body {
   font-family: "Arial", sans-serif;
   background-color: #f0f8ff;
@@ -18,26 +20,41 @@ h1 {
   color: #333;
 }
 
-.gender-options #maleButton {
-  margin: 5px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.input-area {
+  margin-bottom: 20px; /* Add some spacing */
 }
 
+.input-area label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-area textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.gender-options #maleButton,
 .gender-options #femaleButton {
   margin: 5px;
   padding: 10px 20px;
-  background-color: rgb(238, 136, 153);
-  color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  color: white;
+}
+
+.gender-options #maleButton {
+  background-color: #007bff;
+}
+
+.gender-options #femaleButton {
+  background-color: rgb(238, 136, 153);
 }
 
 .gender-options #maleButton:hover {
@@ -57,5 +74,4 @@ h1 {
 footer {
   text-align: center;
   font-size: 13px;
-  margin-top: 10px;
 }

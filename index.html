@@ -11,10 +11,21 @@
   <body>
     <div class="container">
       <h1>AI Pick-Up Line Generator</h1>
+
+      <div class="input-area">
+        <label for="instructions">Personal Instructions:</label><br />
+        <textarea
+          id="instructions"
+          placeholder="E.g.,  'At a party' or 'I love their smile'"
+        ></textarea>
+      </div>
+
+      <!-- Gender selection buttons -->
       <div class="gender-options">
         <button id="maleButton">For Males</button>
         <button id="femaleButton">For Females</button>
       </div>
+      <!-- Display generated line -->
       <div id="line"></div>
     </div>
     <footer>
@@ -33,6 +44,7 @@
       >.
     </footer>
 
+    <!-- Link to the JavaScript file -->
     <script src="src/script.js"></script>
   </body>
 </html>
